@@ -1,0 +1,20 @@
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.header {
+  height: f.rem(85);
+  // min-width: f.rem(375);
+  display: flex;
+  // flex-direction: ;
+  align-items: center;
+
+  &__img {
+    width: f.rem(107);
+    margin-left: f.rem(30);
+  }
+
+  @include m.breakpoint-up(medium) {
+    display: none;
+  }
+}
